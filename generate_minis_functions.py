@@ -36,11 +36,9 @@ def create_mini(monster):
         creature_size = monsters[monster]['size']
         img_url = monsters[monster]['img_url']
     except:
-        print('Monster "{}" not found.'.format(monster))
         return 'Monster not found.'
     
     if img_url == '':
-        print('No url found for {}. Skipping.'.format(monster))
         return 'No image url found.'
     
     # more settings
