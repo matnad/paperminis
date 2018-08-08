@@ -4,6 +4,6 @@ Spaghetti code algo to generate miniatures for tabletop games from a json with n
 
 Object Oriented version exists, will be commited when finished.
 
-# speedscaper
+# speedscraper
 
 Scrapes all official monsters from D&D Beyond into a json, in just a couple seconds.
