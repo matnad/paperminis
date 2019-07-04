@@ -1165,7 +1165,7 @@
         "CR": 0.25,
         "creature_size": "Large",
         "creature_type": "Beast",
-        "img_url": "https://i.imgur.com/GrjN1HL.jpg",
+        "img_url": "https://morphmarket-media.s3.amazonaws.com/static/img/backsplashes/large/bc-hypo-offset.734f2b9b2c71.jpg",
         "name": "Constrictor Snake"
     },
     "Copper Dragon Wyrmling": {
@@ -2348,7 +2348,7 @@
         "CR": 2.0,
         "creature_size": "Huge",
         "creature_type": "Beast",
-        "img_url": "https://i.imgur.com/GrjN1HL.jpg",
+        "img_url": "https://db4sgowjqfwig.cloudfront.net/campaigns/110358/assets/471413/5hvb3g74.jpg?1434496628",
         "name": "Giant Constrictor Snake"
     },
     "Giant Crab": {
@@ -5400,7 +5400,7 @@
         "CR": 2.0,
         "creature_size": "Medium",
         "creature_type": "Beast",
-        "img_url": "https://i.imgur.com/GrjN1HL.jpg",
+        "img_url": "https://db4sgowjqfwig.cloudfront.net/campaigns/110358/assets/476492/Swarm_of_Poisonous_Snakes.jpg?1435614279",
         "name": "Swarm of Poisonous Snakes"
     },
     "Swarm of Quippers": {
@@ -6501,5 +6501,79 @@
         "creature_type": "Fiend",
         "img_url": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/15/21/1000/1000/636369570329065466.png",
         "name": "Zuggtmoy"
+    },
+
+        "Whisk": {
+        "CR": 0.5,
+        "creature_size": "Medium",
+        "creature_type": "Monstrosity",
+        "img_url": "https://i.pinimg.com/originals/45/ce/64/45ce6491b6c77c69084cf8e7a980dc1b.jpg",
+        "name": "Whisk"
+    },
+    "Astryd": {
+        "CR": 23.0,
+        "creature_size": "Medium",
+        "creature_type": "Fiend",
+        "img_url": "https://i.pinimg.com/originals/d2/85/1a/d2851a30cc29535b3c708509b49d938b.jpg",
+        "name": "Astryd"
+    },
+	 "Ophidian": {
+        "CR": 3.0,
+        "creature_size": "Medium",
+        "creature_type": "Fiend",
+        "img_url": "https://vignette.wikia.nocookie.net/forgottenrealms/images/d/d5/Ophidian3e.jpg/revision/latest/scale-to-width-down/350?cb=20160326215925",
+        "name": "Ophidian"
+    },
+         "Flesh Mound": {
+        "CR": 3.0,
+        "creature_size": "Large",
+        "creature_type": "Undead",
+        "img_url": "https://jonbrazer.com/wp-content/uploads/2018/04/Gibbering-Glob.jpg",
+        "name": "Flesh Mound"
+    },
+         "Flesh Mound H": {
+        "CR": 3.0,
+        "creature_size": "Huge",
+        "creature_type": "Undead",
+        "img_url": "https://jonbrazer.com/wp-content/uploads/2018/04/Gibbering-Glob.jpg",
+        "name": "Flesh Mound"
+    },
+
+         "P Flesh Mound": {
+        "CR": 3.0,
+        "creature_size": "Large",
+        "creature_type": "Undead",
+        "img_url": "https://i.pinimg.com/originals/9d/84/96/9d84965d3f0a9f6ed21b44557146d986.jpg",
+        "name": "Flesh Mound"
+    },
+         "P Flesh Mound H": {
+        "CR": 3.0,
+        "creature_size": "Huge",
+        "creature_type": "Undead",
+        "img_url": "https://i.pinimg.com/originals/9d/84/96/9d84965d3f0a9f6ed21b44557146d986.jpg",
+        "name": "Flesh Mound"
+    },
+
+         "Joe Sanders": {
+        "CR": 3.0,
+        "creature_size": "Medium",
+        "creature_type": "Human",
+        "img_url": "https://paizo.com/image/content/RiseOfTheRunelords/Pathfinder5-Wizard.jpg",
+        "name": "Joe Sanders"
+    },
+
+         "Bernie Biden": {
+        "CR": 3.0,
+        "creature_size": "Medium",
+        "creature_type": "Half-Elf",
+        "img_url": "https://i.imgur.com/7dfxgU6.png",
+        "name": "Bernie Biden"
+    },
+    "Aleshi": {
+        "CR": 3.0,
+        "creature_size": "Medium",
+        "creature_type": "Half-Orc",
+        "img_url": "    https://i.pinimg.com/originals/ca/69/c9/ca69c963a60d3d0f4f9e51778add49b1.jpg",
+        "name": "Aleshi"
     }
 }

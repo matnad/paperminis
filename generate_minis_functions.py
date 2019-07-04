@@ -13,7 +13,7 @@ from fake_useragent import UserAgent
 import greedypacker
 
 ## settings
-do_these = ['Marid', 'Sea Spawn', 'Sea Spawn', 'Storm Giant', 'Sea Spawn', 'Sea Hag']
+do_these = ['Aleshi', 'Bernie Biden', 'Joe Sanders']
 
 paper_format = 'a4'
 print_margin = np.array([3.5, 4])  # left&right, top&bottom in mm per side
