@@ -1,0 +1,6 @@
+Pillow>=6.1.0
+beautifulsoup4>=4.7.1
+fake-useragent>=0.1.11
+greedypacker>=0.4
+opencv-python>=4.1.0.25
+requests>=2.22.0
