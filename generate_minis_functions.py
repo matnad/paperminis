@@ -41,6 +41,7 @@ def create_mini(monster):
     try:
         creature_size = monsters[monster]['size']
         img_url = monsters[monster]['img_url']
+        monster_name = monsters[monster]['name']
     except:
         return 'Monster not found.'
 
@@ -81,7 +82,6 @@ def create_mini(monster):
     width = m_width * dpmm
 
     ## generate name plate
-    text = monster
     n_img = np.zeros((n_height * dpmm, width, 3), np.uint8) + 255
 
     x_margin = 0
@@ -90,14 +90,14 @@ def create_mini(monster):
     # find optimal font size
     while x_margin < 2 or y_margin < 10:
         font_size = round(font_size - 0.05, 2)
-        textsize = cv.getTextSize(text, font, font_size, font_width)[0]
+        textsize = cv.getTextSize(monster_name, font, font_size, font_width)[0]
         x_margin = n_img.shape[1] - textsize[0]
         y_margin = n_img.shape[0] - textsize[1]
 
-    # write text        
+    # write text
     textX = np.floor_divide(x_margin, 2)
     textY = np.floor_divide(n_img.shape[0] + textsize[1], 2)
-    cv.putText(n_img, text, (textX, textY), font, font_size, (0, 0, 0), font_width, cv.LINE_AA)
+    cv.putText(n_img, monster_name, (textX, textY), font, font_size, (0, 0, 0), font_width, cv.LINE_AA)
     cv.rectangle(n_img, (0, 0), (n_img.shape[1] - 1, n_img.shape[0] - 1), (0, 0, 0), thickness=1)
 
     ## generate mimiature image
