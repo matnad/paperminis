@@ -33,7 +33,7 @@ with open('monsters.json', encoding='utf-8') as data_file:
 def create_mini(monster):
     # load values
     try:
-        creature_size = monsters[monster]['creature_size']
+        creature_size = monsters[monster]['size']
         img_url = monsters[monster]['img_url']
     except:
         return 'Monster not found.'
