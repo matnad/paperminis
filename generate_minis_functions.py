@@ -4,11 +4,13 @@ Created on Tue Jul 24 10:12:16 2018
 
 @author: Matthias N.
 """
+from pathlib import Path
+from urllib.request import Request, urlopen
+import json
+
 import numpy as np
 import cv2 as cv
 from PIL import Image
-import json
-from urllib.request import Request, urlopen
 from fake_useragent import UserAgent
 import greedypacker
 
@@ -27,14 +29,19 @@ ua = UserAgent()
 header = {'User-Agent': str(ua.chrome)}
 with open('monsters.json', encoding='utf-8') as data_file:
     monsters = json.loads(data_file.read())
+minis_dir = Path('minis')
+minis_dir.mkdir(exist_ok=True)
+sheet_dir = Path('sheets')
+sheet_dir.mkdir(exist_ok=True)
 
 
 ## main function    
 def create_mini(monster):
     # load values
     try:
-        creature_size = monsters[monster]['creature_size']
+        creature_size = monsters[monster]['size']
         img_url = monsters[monster]['img_url']
+        monster_name = monsters[monster]['name']
     except:
         return 'Monster not found.'
 
@@ -75,7 +82,6 @@ def create_mini(monster):
     width = m_width * dpmm
 
     ## generate name plate
-    text = monster
     n_img = np.zeros((n_height * dpmm, width, 3), np.uint8) + 255
 
     x_margin = 0
@@ -84,14 +90,14 @@ def create_mini(monster):
     # find optimal font size
     while x_margin < 2 or y_margin < 10:
         font_size = round(font_size - 0.05, 2)
-        textsize = cv.getTextSize(text, font, font_size, font_width)[0]
+        textsize = cv.getTextSize(monster_name, font, font_size, font_width)[0]
         x_margin = n_img.shape[1] - textsize[0]
         y_margin = n_img.shape[0] - textsize[1]
 
-    # write text        
+    # write text
     textX = np.floor_divide(x_margin, 2)
     textY = np.floor_divide(n_img.shape[0] + textsize[1], 2)
-    cv.putText(n_img, text, (textX, textY), font, font_size, (0, 0, 0), font_width, cv.LINE_AA)
+    cv.putText(n_img, monster_name, (textX, textY), font, font_size, (0, 0, 0), font_width, cv.LINE_AA)
     cv.rectangle(n_img, (0, 0), (n_img.shape[1] - 1, n_img.shape[0] - 1), (0, 0, 0), thickness=1)
 
     ## generate mimiature image
@@ -158,8 +164,9 @@ def create_mini(monster):
     img = np.append(flipped_img, img, axis=0)
     # convert to PIL image so we can save it with the correct dpi
     RGB_img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
+    img_file = minis_dir / '{}.png'.format(monster)
     im_pil = Image.fromarray(RGB_img)
-    im_pil.save("minis/" + monster + ".png", dpi=(25.4 * dpmm, 25.4 * dpmm))
+    im_pil.save(img_file, dpi=(25.4 * dpmm, 25.4 * dpmm))
 
     return img
 
@@ -210,8 +217,9 @@ for r in result:
 
     # save sheets
     RGB_img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
+    sheet_file = sheet_dir / 'sheet_{}.png'.format(sheet_nr)
     im_pil = Image.fromarray(RGB_img)
-    im_pil.save("sheets/sheet_" + str(sheet_nr) + ".png", dpi=(25.4 * dpmm, 25.4 * dpmm))
+    im_pil.save(sheet_file, dpi=(25.4 * dpmm, 25.4 * dpmm))
     sheet_nr += 1
 
     # display result if you want
