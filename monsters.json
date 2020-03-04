@@ -49,6 +49,7 @@
         "name": "Adult Blue Dracolich",
         "size": "Huge"
     },
+
     "Adult Blue Dragon": {
         "img_url": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/16/1000/1000/636238882493439723.jpeg",
         "name": "Adult Blue Dragon",
@@ -97,6 +98,16 @@
     "Adult Silver Dragon": {
         "img_url": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/123/1000/1000/636252753945133025.jpeg",
         "name": "Adult Silver Dragon",
+        "size": "Huge"
+    },
+     "Adult Silver Dracolich": {
+        "img_url": "https://i.pinimg.com/originals/4b/85/b9/4b85b98c4b34fc5b707180b026287d82.jpg",
+        "name": "Adult Silver Dracolich",
+        "size": "Huge"
+    },
+    "Adult Silver Shadow Dragon": {
+        "img_url": "https://png.pngitem.com/pimgs/s/40-405727_dragon-city-shadow-dragon-dungeons-dragons-d-d.png",
+        "name": "Adult Silver Shadow Dragon",
         "size": "Huge"
     },
     "Adult White Dragon": {
@@ -2075,7 +2086,7 @@
         "size": "Large"
     },
     "Evil Mage": {
-        "img_url": "https://i.imgur.com/ZSH9ikY.jpg",
+        "img_url": "https://vignette.wikia.nocookie.net/rysarian/images/f/fa/Redwizard.jpg/revision/latest?cb=20170422184717",
         "name": "Evil Mage",
         "size": "Medium"
     },
@@ -5225,7 +5236,7 @@
         "size": "Large"
     },
     "Redbrand Ruffian": {
-        "img_url": "https://i.imgur.com/ZSH9ikY.jpg",
+        "img_url": "https://i.pinimg.com/originals/2e/99/88/2e9988c243d0cebd3669dae95d9ec5df.jpg",
         "name": "Redbrand Ruffian",
         "size": "Medium"
     },
@@ -5435,7 +5446,7 @@
         "size": "Medium"
     },
     "Rictavio": {
-        "img_url": "https://i.imgur.com/ZSH9ikY.jpg",
+        "img_url": "https://vignette.wikia.nocookie.net/brightsidedm/images/5/51/Rictavio.jpg/revision/latest?cb=20181110200913",
         "name": "Rictavio",
         "size": "Medium"
     },
@@ -6274,6 +6285,11 @@
         "name": "Swarm of Bats",
         "size": "Medium"
     },
+    "Swarm of Bats2": {
+        "img_url": "https://toppng.com/public/uploads/preview/swarm-bats-dc-comics-11563209946haj7osliph.png",
+        "name": "Swarm of Bats2",
+        "size": "Medium"
+    },
     "Swarm of Cranium Rats": {
         "img_url": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/9/606/1000/1000/636329535490872499.jpeg",
         "name": "Swarm of Cranium Rats",
@@ -6430,7 +6446,7 @@
         "size": "Medium"
     },
     "The Abbot": {
-        "img_url": "https://i.imgur.com/EHaX5Pz.jpg",
+        "img_url": "https://db4sgowjqfwig.cloudfront.net/images/4693814/Abbot.jpg",
         "name": "The Abbot",
         "size": "Medium"
     },
@@ -7542,6 +7558,41 @@
     "four-armed Gargoyle": {
         "img_url": "https://i.imgur.com/egeiuFf.jpg",
         "name": "four-armed Gargoyle",
+        "size": "Medium"
+    },
+
+      "Joe Sanders": {
+        "size": "Medium",
+        "img_url": "https://paizo.com/image/content/RiseOfTheRunelords/Pathfinder5-Wizard.jpg",
+        "name": "Joe Sanders"
+    },
+
+     "Bernie Biden": {
+        "size": "Medium",
+        "img_url": "https://i.imgur.com/7dfxgU6.png",
+        "name": "Bernie Biden"
+    },
+    "Aleshi": {
+        "size": "Medium",
+        "img_url": "    https://i.pinimg.com/originals/ca/69/c9/ca69c963a60d3d0f4f9e51778add49b1.jpg",
+        "name": "Aleshi"
+    },
+    "Vough":
+    {
+        "img_url": "https://i.imgur.com/OG0tdZ7.png",
+        "name": "Vough",
+        "size": "Medium"
+    },
+    "Old Lady":
+    {
+        "img_url": "https://i.pinimg.com/originals/88/06/c2/8806c2810e81fcb42299539e9871d2bb.png",
+        "name": "Old Lady",
+        "size": "Medium"
+    },
+    "Vall":
+    {
+        "img_url": "https://i.pinimg.com/originals/ba/4b/b5/ba4bb559871b6896529a3619506f1106.jpg",
+        "name": "Vall",
         "size": "Medium"
     }
 }

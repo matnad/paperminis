@@ -15,7 +15,7 @@ from fake_useragent import UserAgent
 import greedypacker
 
 ## settings
-do_these = ['Aleshi', 'Bernie Biden', 'Joe Sanders']
+do_these = ['Vall', 'Vall']
 
 paper_format = 'a4'
 print_margin = np.array([3.5, 4])  # left&right, top&bottom in mm per side
@@ -160,7 +160,7 @@ def create_mini(monster):
 
     ## construct full miniature
     img = np.concatenate((m_img, n_img, b_img), axis=0)
-    flipped_img = cv.flip(img, -1)
+    flipped_img = cv.flip(img, 0)
     img = np.append(flipped_img, img, axis=0)
     # convert to PIL image so we can save it with the correct dpi
     RGB_img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
